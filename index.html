@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Додати вчителя</title>
+</head>
+<body>
+  <header>
+    <h1>Додати вчителя</h1>
+  </header>
+  
+  <main>
+    <form action="submit_teacher.php" method="POST">
+      <section>
+        <label for="full_name">Повне ім'я:</label>
+        <input type="text" id="full_name" name="full_name" required>
+      </section>
+      
+      <section>
+        <label for="gender">Стать:</label>
+        <select id="gender" name="gender" required>
+          <option value="">Оберіть стать</option>
+          <option value="male">Чоловік</option>
+          <option value="female">Жінка</option>
+        </select>
+      </section>
+      
+      <section>
+        <label for="dob">Дата народження:</label>
+        <input type="date" id="dob" name="dob" required>
+      </section>
+      
+      <section>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </section>
+      
+      <section>
+        <label for="phone">Телефон:</label>
+        <input type="tel" id="phone" name="phone" required>
+      </section>
+      
+      <section>
+        <label for="bg_color">Бажаний колір фону:</label>
+        <input type="color" id="bg_color" name="bg_color" required>
+      </section>
+      
+      <section>
+        <label for="country">Країна:</label>
+        <input type="text" id="country" name="country" required>
+      </section>
+      
+      <section>
+        <label for="city">Місто:</label>
+        <input type="text" id="city" name="city" required>
+      </section>
+      
+      <section>
+        <label for="comment">Коментар:</label>
+        <textarea id="comment" name="comment" rows="4"></textarea>
+      </section>
+      
+      <button type="submit">Додати вчителя</button>
+    </form>
+  </main>
+  
+</body>
+</html>
